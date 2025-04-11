@@ -1,5 +1,12 @@
+import { useNavigate } from "react-router-dom"
+
 export const CardMenu = ({item,index}) => {
-    return (<section className="group relative flex items-center p-3 bg-white dark:bg-black/20 rounded-lg mb-3 cursor-pointer hover:bg-white hover:scale-105 sm:hover:scale-110 transition-all duration-500 hover:translate-0 sm:hover:translate-x-4 border-2 border-solid border-white dark:border-black/15">
+
+    const navigate = useNavigate()
+
+    return (<section className="group relative flex items-center p-3 bg-white dark:bg-black/20 rounded-lg mb-3 cursor-pointer hover:bg-white hover:scale-105 sm:hover:scale-110 transition-all duration-500 hover:translate-0 sm:hover:translate-x-4 border-2 border-solid border-white dark:border-black/15 " 
+    onClick={() =>navigate(item.ruta)}
+    >
         
 
        
